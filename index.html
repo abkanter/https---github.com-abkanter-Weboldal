@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkatech</title>
+    <link rel="stylesheet" href="munkatech.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4>Környezetvédelem Bt    Telefon +36 30 1234567    kornyezetvedelem@gmail.com</h4>    
+        <nav class="navbar"> 
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" >   
+             <li><a href="index.html">Kezdőlap</a></li>
+             <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+             <li><a href="ajanlat.html">Árajánlat</a></li>
+             <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+ </header>
+    <div class="mainpic">
+        <p style="width: auto; height: 500px;">Munka-, tűz-, környezetvédelmi szakértői szolgáltatás</p>
+    </div>
+    <section>
+        <img src="/fold2.jpg" alt="fold" width="500px" height="200px" margin-right="20px"> 
+        <h1>Bemutatkozás</h1>
+            <p>Üdvözöljük vállalkozásunknál!
+
+                Több mint 30 éves tapasztalatunkra támaszkodva nyújtunk szakértői megoldásokat a munkavédelem, tűzvédelem és környezetvédelem területén. Az elmúlt három évtizedben célunk mindig az volt, hogy partnereink számára megbízható, jogszabályoknak megfelelő, ugyanakkor gyakorlati szempontból is hatékony támogatást biztosítsunk.
+                
+                Széleskörű tapasztalatunk kiterjed:
+                
+                Munkavédelemre, ahol segítünk minimalizálni a munkahelyi balesetek kockázatát, és hozzájárulunk a munkavállalók biztonságához.
+                Tűzvédelemre, ahol megoldásainkkal csökkentjük a tűzesetek kockázatát, és biztosítjuk az előírások maradéktalan betartását.
+                Környezetvédelemre, ahol fenntartható megoldásokkal támogatjuk ügyfeleinket, hogy vállalkozásuk környezetbarát módon működjön.
+                Munkánk során kiemelt figyelmet fordítunk az ügyfeleink igényeire, legyen szó oktatásokról, kockázatelemzésekről, szakmai dokumentációk elkészítéséről vagy helyszíni tanácsadásról. Csapatunk a legkorszerűbb technológiákat és módszereket alkalmazza annak érdekében, hogy ügyfeleink mindig naprakészen és a legjobb megoldásokkal dolgozhassanak.
+                
+                Az évek során számtalan iparágban bizonyítottuk szakértelmünket, és partnereink között találhatóak kisvállalkozások, középvállalatok, valamint nagyvállalatok is. Büszkék vagyunk rá, hogy munkánkkal hozzájárulhatunk egy biztonságosabb, fenntarthatóbb és jobb jövő megteremtéséhez.
+                
+                Ha Önnek is fontos a biztonság, a környezetvédelem és a szakmai kiválóság, keressen minket bizalommal! 🌱 
+                </p>
+    </section>
+    <article>
+        <p>Szolgáltatásaink</p>
+        <ul class="szolgaltatasok">
+            <li>Környezetvédelem</li>
+            <li>Munkavédelem</li>
+            <li>Tüzvédelem</li>
+            <li>ISO Minősítések</li>
+            <li><img src="/kornyezetvedelem.webp" alt="" style="width: 50%;"></li>
+            <li><img src="/munkavedelem.webp" alt="" style="width: 50%;"></li>
+            <li><img src="/tuzvedlem.webp" alt="" style="width: 50%;"></li>
+            <li><img src="/iso.webp" alt="" style="width: 50%;"></li>
+        </ul> 
+    </article> 
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+});
+    </script>
+</body>
+</html>

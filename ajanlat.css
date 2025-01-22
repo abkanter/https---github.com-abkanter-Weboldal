@@ -1,0 +1,150 @@
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+h4 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: green;
+    color: white; 
+}
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: white;
+    font-size: 20px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: green;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    background-color: green;
+    height: 2px;
+    width: 25px;
+    margin: 3px 0;
+}
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 120px;
+        left: 0;
+    }
+    .nav-list.active {
+        display: flex;
+    }
+    .nav-list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.menu-icon {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.ajanlat {
+    margin: 0 auto;
+    background-image: url(/decor2c.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 120px;
+}
+
+.keret {
+    margin: 0px 200px 50px 200px;
+    width: auto;
+    box-shadow: 5px 5px 30px green;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px white;
+}
+input {
+        width: 50%;
+        height: 20px;
+
+}
+.button {
+    background-color: green;
+    color: white;
+    text-shadow: 5px 5px 7px;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+input#jelszo {
+    background-color: white;
+}
+.ajanlatkeres {
+    font-size: large;
+    margin: 50px 200px 50px 200px;
+}
+@media screen and (max-width: 768px) {
+    .keret {
+        margin: 50px;
+        min-width: 400px;
+    }
+    .ajanlat {
+        background-attachment: fixed;
+        background-position: center;
+        font-size: 60px;
+    }
+    .ajanlatkeres {
+        margin: 20px;
+    }
+
+}
+

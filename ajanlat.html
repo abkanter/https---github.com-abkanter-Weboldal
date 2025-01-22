@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árajánlat</title>
+    <link rel="stylesheet" href="ajanlat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4>Környezetvédelem Bt    Telefon +36 30 1234567    kornyezetvedelem@gmail.com</h4>    
+        <nav class="navbar"> 
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" >   
+             <li><a href="index.html">Kezdőlap</a></li>
+             <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+             <li><a href="ajanlat.html">Árajánlat</a></li>
+             <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+ </header>
+<div class="ajanlat">
+    <p>Ajánlatkérés</p>
+</div>
+<div class="ajanlatkeres">
+<span>
+   <strong> Kérjen ajánlatot fenntartható és biztonságos megoldásokért!</strong><br>
+   <br>
+Elkötelezettek vagyunk amellett, hogy munka- és környezetvédelmi szolgáltatásainkkal támogassuk Önt és vállalkozását. 
+Töltse ki az ajánlatkérő űrlapot, és szakértő csapatunk rövid időn belül felveszi Önnel a kapcsolatot, 
+hogy az Ön igényeihez igazított, hatékony és fenntartható megoldásokat nyújthassunk.
+</span>
+<ul>
+    <li>Teljes körű munka- és környezetvédelmi tanácsadás</li>
+    <li>Auditok és megfelelőségi ellenőrzések</li>
+    <li>Képzések és oktatások a biztonság és fenntarthatóság jegyében</li>
+    <li>Egyéni megoldások a környezetvédelem előmozdítására</li>
+</ul>
+<span>Hisszük, hogy a biztonságos munkakörnyezet és a fenntarthatóság kéz a kézben járnak. 
+    Kérjen ajánlatot még ma, és dolgozzunk együtt egy biztonságosabb és zöldebb jövőért!</span>
+</div>
+<div class="keret">
+    <form action="urlap2.html">
+        <p style="text-align: center; font-size: 32px;"><strong>Ajánlatkérés</strong></p>
+        
+        <div class="nev">
+            <p>Név <sup>*</sup></p>
+            <label for="vezeteknev"></label>
+            <input type="text" name="vezeteknev" id="vnev" required>
+        </div>
+        <div>
+            <p>Cégnév</p>
+            <label for="cegnev"></label>
+            <input type="text" name="cegnev" id="ceg">
+        </div>
+        <div>
+            <p>Telefon</p>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div class="email">
+            <p>E-mail cím <sup>*</sup></p>
+            <input type="email" name="email" id="emal" required>
+            <label for="email"></label>
+            <div>
+                <p>Üzenet<sup>*</sup></p>
+                <textarea name="uzenet" id="uzenet" cols="40" rows="20"></textarea>
+            </div>
+        </div>
+        <p>Kötelező mezők <sup>*</sup></p>
+        <div style="padding-top: 20px;">
+        <input type="button" value="Küldés" class="button">
+
+    </div>
+    </form>
+</div>
+</div>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+</script> 
+</body>
+</html>

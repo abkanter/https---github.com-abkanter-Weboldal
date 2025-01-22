@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkatech</title>
+    <link rel="stylesheet" href="kapcsolat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4>Környezetvédelem Bt    Telefon +36 30 1234567    kornyezetvedelem@gmail.com</h4>    
+        <nav class="navbar"> 
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" >   
+             <li><a href="index.html">Kezdőlap</a></li>
+             <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+             <li><a href="ajanlat.html">Árajánlat</a></li>
+             <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+ </header>
+    <div class="kapcsolat">
+        <p>Kapcsolat</p>
+    </div>
+<div class="kontakt">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175928.41545615613!2d16.84045303988111!3d46.45104513881073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476893061c075be9%3A0x400c4290c1e12b0!2sNagykanizsa!5e0!3m2!1shu!2shu!4v1737208104086!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <ul class="cegadatok">
+        <p style="font-size: xx-large;" ><strong>Környezetvédelem Bt</strong></p>
+            <li>Székhely: 8800 Nagykanizsa</li>
+            <li>Adószám: 12345678-2-10</li>
+            <li><abbr title="Hívás"></abbr><a href="tel:+36301234567">Telefon: +36301234567</a></li>
+            <li><a href="mailto:kornyezetvedelem@gmail.com">Email cím: kornyezetvedelem@gmail.com</a></li>
+    </ul>
+</div>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+</script>
+</body>
+</html>    
+    

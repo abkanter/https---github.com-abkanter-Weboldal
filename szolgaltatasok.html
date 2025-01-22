@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Környezetvedelem</title>
+    <link rel="stylesheet" href="szolgaltatasok.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4>Környezetvédelem Bt    Telefon +36 30 1234567    kornyezetvedelem@gmail.com</h4>    
+        <nav class="navbar"> 
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" >   
+             <li><a href="index.html">Kezdőlap</a></li>
+             <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+             <li><a href="ajanlat.html">Árajánlat</a></li>
+             <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+ </header>
+ <div class="szolgaltatasok">
+    <p>Szolgáltatásaink</p>
+</div>
+<article>
+    <p><strong>Szakértelem a biztonság és fenntarthatóság szolgálatában</strong></p>
+    <p>Cégünk átfogó szolgáltatásokat nyújt, hogy vállalkozása megfeleljen a legmagasabb szintű munka- és környezetvédelmi követelményeknek, 
+        miközben hozzájárul a fenntartható fejlődéshez és a biztonságos működéshez. 
+        Szolgáltatásaink célja, hogy Ön és csapata nyugodtan koncentrálhasson az üzleti célokra, 
+        miközben mi gondoskodunk a megfelelőségről és a hatékonyságról.</p>
+    <p><strong>Szolgáltatásaink közé tartozik:</strong></p>
+    <ul>
+        <li><strong>Környezetvédelem:</strong>
+            Segítünk csökkenteni vállalkozása környezeti terhelését a jogszabályi követelmények betartásával és innovatív megoldásokkal.
+        </li>
+        <li><strong>Munkavédelem:</strong>
+            Biztonságos munkakörnyezet megteremtése és a balesetmegelőzés érdekében teljes körű tanácsadással, kockázatértékeléssel és oktatásokkal támogatjuk Önt.</li>
+        <li><strong>Tűzvédelem:</strong>
+            A megelőzésben és a kockázat minimalizálásában számíthat ránk – tűzvédelmi tervek készítése, ellenőrzések és oktatások révén biztosítjuk a biztonságot.</li>
+        <li><strong>ISO Minősítések:</strong>
+            Professzionális segítséget nyújtunk az ISO szabványok szerinti tanúsítások elérésében, amelyek nemcsak a megfelelőséget garantálják, de javítják vállalkozása versenyképességét is.</li>
+    </ul>
+</article>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+</script>
+</body>
+</html>
