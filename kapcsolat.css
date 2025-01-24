@@ -89,7 +89,7 @@ header {
 }
 .kapcsolat {
     margin: 0 auto;
-    background-image: url(/kontakt.avif);
+    background-image: url(kontakt.avif);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;

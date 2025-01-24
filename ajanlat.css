@@ -89,7 +89,7 @@ header {
 }
 .ajanlat {
     margin: 0 auto;
-    background-image: url(/decor2c.jpg);
+    background-image: url(decor2c.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 200px;
